@@ -34,6 +34,20 @@ html, body{
     margin-left:-65%;
 }
 
+.container:after{
+    content:'';
+    width: 120%;
+    max-width: 500px;
+    background:hsl(270, 20%, 93%);
+    height: 70%;
+    border-radius: 50% 50% 0 0;
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    right: 0;
+    margin-right:-65%;
+}
+
 .mobile-container{
     display: flex;
     flex-direction: column;
@@ -223,4 +237,19 @@ html, body{
     height: 34px;
     border-radius: 50%;
 }
+.paragraph{
+    position: relative;
+    z-index: 999;
+    margin: 0 auto;
+    text-align: center;
+}
 
+
+@media only screen and (min-width: 700px) {
+  .container:before{
+      margin-left:-10%;
+  }
+  .container:after{
+    margin-right:-10%;
+}
+  }
